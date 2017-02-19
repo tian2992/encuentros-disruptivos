@@ -42,9 +42,14 @@
    strong, dt {
      font-size: 120%; font-weight: bold;
    }
-   h1 {
+   h1, h2{
     padding-top: 1em;
     font-family: 'Oswald', sans-serif;
+   }
+   h2{
+   font-size: 24pt;
+   line-height: 48pt;
+   text-transform: uppercase;
    }
    .logos {
       max-width:100%;
@@ -54,10 +59,34 @@ object-fit: contain;
    .creditos {
    background-color: #FFF;
    }
-   .leadwrap{
+   .leadwrap, .agenda{
         width: 960px;
      margin: 0 auto;
    }
+   .agenda {
+      color:#000;
+   }
+   .wrapverde {
+   width: 100%;
+   padding-bottom: 4em;
+   background-color: #0F0;
+   }
+  .followphrase{
+      padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-family: 'Arbutus Slab', serif;
+    font-size: 24pt;
+    line-height: 48pt;
+  }
+  .hora {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20pt;
+  }
+  .leadagenda{
+        font-family: 'Oswald', sans-serif;
+    font-size: 20pt;
+  }
 
 
    .leadphrase {
@@ -81,6 +110,17 @@ object-fit: contain;
      color: #00FF00;
      font-family: 'Oswald', sans-serif;
      border: #0F0 solid 4px;
+   }
+   .tablaAgenda{
+   background:#FFF;
+   font-family: 'Arbutus Slab', serif;
+   border: #000 solid 4px;
+
+   }
+   .tablaAgenda td{
+
+   border: #000 solid 4px;
+   padding: 2em;
    }
   </style>
 
@@ -114,97 +154,107 @@ object-fit: contain;
     <p>
       Llena este formulario para <a href="https://goo.gl/forms/0WS4sSVDEacM1BYx1">Registrate Aqui</a>.
     </p>
+  </div>
 
+  <div class="wrapverde">
     <div class="agenda">
-    <h1>Agenda</h1>
+    <div class="followphrase">
+    Tienen que existir formas distintas de resolver los <br />
+problemas de siempre, este es la oportunidad para <br />
+quienes las están buscando.
+</div>
 
     <h2>Miércoles 1 de marzo</h2>
-    <table border="0" cellpadding="0" cellspacing="0" class="Table1">
+    <table border="0" cellpadding="0" cellspacing="0" class="tablaAgenda">
     <colgroup>
       <col width="20%">
       <col width="80%">
     </colgroup>
     <tr class="Table11">
       <td class="Table1_A2">
-        <p class="P2"><span class="T1">4 - 7.30 pm</span></p>
+        <p class="P2"><span class="T1 hora">4 - 7:30 pm</span></p>
       </td>
       <td class="Table1_B2">
-        <p class="P2"><span class="T2">FiIS Revelado</span></p>
+        <p class="P2"><span class="T2 leadagenda">FiIS Revelado</span></p>
         <p class="P2"><span class="T3">Una selección del</span> <span class="T4">Festival Revelado</span><span class="T6">, de Santiago de Chile. Largos y cortometrajes en los que se evidencia cómo el cine puede ser una herramienta de transformación e impacto social. Habrá frío, chocolate caliente y poporopos.</span></p>
       </td>
     </tr>
     <tr class="Table11">
       <td class="Table1_A2">
-        <p class="P2"><span class="T6">7:30 - 9 pm</span></p>
+        <p class="P2"><span class="T6 hora">7:30 - 9 pm</span></p>
       </td>
-      <td class="Table1_B2>
-        <p class="P2"><span class="T7">La grieta en el muro: el arte como herramienta de innovación social</span></p>
+      <td class="Table1_B2">
+        <p class="P2"><span class="T7 leadagenda">La grieta en el muro: el arte como herramienta de innovación social</span></p>
         <p class="P2"><span class="T6">Un conversatorio con artistas y gestores culturales para discutir los modelos de desarrollo cultural y las posibles rutas de transformación social a través del arte.</span></p>
       </td>
     </tr>
     </table>
     <h2>Jueves 2 de marzo</h2>
-    <table>
+    <table border="0" cellpadding="0" cellspacing="0" class="tablaAgenda">
       <colgroup>
       <col width="20%">
       <col width="80%">
     </colgroup>
     <tr class="Table11">
       <td class="Table1_A2">
-        <p class="P2"><span class="T6">9:20 am</span></p>
+        <p class="P2"><span class="T6 hora">9:20 am</span></p>
       </td>
       <td class="Table1_B2">
-        <p class="P2"><span class="T7">¿Por qué apostar por el encuentro?</span> <span class="T6">palabras de Samuel de la Cruz.</span></p>
+        <p class="P2"><span class="T7 leadagenda">¿Por qué apostar por el encuentro?</span> <span class="T6">palabras de Samuel de la Cruz.</span></p>
       </td>
     </tr>
     <tr class="Table11">
       <td class="Table1_A2">
-        <p class="P2"><span class="T6">9:30 am</span></p>
+        <p class="P2"><span class="T6 hora">9:30 am</span></p>
       </td>
       <td class="Table1_B2">
-        <p class="P2"><span class="T7">Discurso inaugural:</span> <span class="T5">Ética y consciencia</span> <span class="T7">por Joan Melé</span></p>
+        <p class="P2"><span class="T7 leadagenda">Discurso inaugural</span></p>
+        <p><span class="T5">Ética y consciencia por Joan Melé</span></p>
       </td>
     </tr>
     <tr class="Table11">
       <td class="Table1_A7">
-        <p class="P2"><span class="T6">8:30 am</span></p>
+        <p class="P2"><span class="T6 hora">8:30 am</span></p>
       </td>
       <td class="Table1_B7">
-        <p class="P2"><span class="T7">Botando barreras: un</span> <span class="T7">encuentro disruptivo</span></p>
+        <p class="P2"><span class="T7 leadagenda">Botando barreras: un encuentro disruptivo</span></p>
         <p class="P2"><span class="T6">Voces relevantes de diferentes sectores de la sociedad civil se encuentran para discutir desde una postura crítica y propositiva los modelos de desarrollo vigentes. Empresarios, líderes campesinos y de sociedad civil, banqueros y conferencistas internacionales convergen en un espacio de respeto y horizontalidad.</span></p>
       </td>
     </tr>
     <tr class="Table21">
       <td class="Table2_A1">
-        <p class="P2"><span class="T8">1:30 pm</span></p>
+        <p class="P2"><span class="T8 hora">1:30 pm</span></p>
       </td>
       <td class="Table2_B1">
-        <p class="P2"><span class="T7">Almuerzo: compartir la mesa</span></p>
+        <p class="P2"><span class="T7 leadagenda">Almuerzo: compartir la mesa</span></p>
       </td>
     </tr>
     <tr class="Table21">
       <td class="Table2_A2">
-        <p class="P2"><span class="T8">3-5 pm</span></p>
+        <p class="P2"><span class="T8 hora">3 - 5 pm</span></p>
       </td>
       <td class="Table2_B2">
-        <p class="P2"><span class="T7">Taller para jóvenes: rutas de innovación</span><span class="T6">Un espacio facilitado por Patricia Jeldes de Socialab Chile en conjunto con el equipo de Socialab Guatemala. Una oportunidad para trasladar conocimientos y herramientas relacionadas a la innovación y al emprendimiento social. Metodologías participativas y la</span> <span class="T6">colaboración como principio de trabajo.</span></p>
+        <p class="P2"><span class="T7 leadagenda">Taller para jóvenes: rutas de innovación</span></p>
+        <p>
+        <span class="T6">Un espacio facilitado por Patricia Jeldes de Socialab Chile en conjunto con el equipo de Socialab Guatemala. Una oportunidad para trasladar conocimientos y herramientas relacionadas a la innovación y al emprendimiento social. Metodologías participativas y la colaboración como principio de trabajo.</span>
+        </p>
       </td>
     </tr>
     <tr class="Table21">
       <td class="Table2_A2">
-        <p class="P2"><span class="T8">5 a 7 pm</span></p>
+        <p class="P2"><span class="T8 hora">5 - 7 pm</span></p>
       </td>
       <td class="Table2_B2">
-        <p class="P2"><span class="T7">Ch’umilal: emprendedores con propósito</span></p>
+        <p class="P2"><span class="T7 leadagenda">Ch’umilal: emprendedores con propósito</span></p>
         <p class="P2"><span class="T6">Diez emprendedores locales presentan en pocas diapositivas las iniciativas y proyectos productivos que surgieron al encontrar sus propósitos de vida. Una oportunidad para inspirarse y nutrirse de experiencias empresariales con</span> <span class="T6">buenos resultados.</span></p>
       </td>
     </tr>
     <tr class="Table21">
       <td class="Table2_A2">
-        <p class="P2"><span class="T8">7 a 8:45 pm</span></p>
+        <p class="P2"><span class="T8 hora">7 - 8:45 pm</span></p>
       </td>
       <td class="Table2_B2">
-        <p class="P2"><span class="T7">Más allá del muro: conferencias disruptivas</span></p>
+        <p class="P2"><span class="T7 leadagenda">Más allá del muro: conferencias disruptivas</span></p>
         <p class="P4"><span class="T6">1. “</span><span class="T4">Dinero y consciencia”,</span> <span class="T6">Joan Melé 45 minutos</span></p>
         <p class="P4"><span class="T6">2. “</span><span class="T4">La revolución de las gallinas: el modelo de agricultura regenerativa</span><span class="T6">"</span></p>
         <p class="P4"><span class="T6">Reginaldo Haslett-Marroquín, 30 minutos</span></p>
@@ -213,22 +263,25 @@ object-fit: contain;
     </tr>
     <tr class="Table21">
       <td class="Table2_A2">
-        <p class="P2"><span class="T8">8:45 pm</span></p>
+        <p class="P2"><span class="T8 hora">8:45 pm</span></p>
       </td>
       <td class="Table2_B2">
-        <p class="P2"><span class="T7">Estreno del videoclip musical</span> <span class="T7">de Sara Curruchich y Kontra</span></p>
+        <p class="P2"><span class="T7 leadagenda">Estreno del videoclip musical de Sara Curruchich y Kontra</span></p>
       </td>
     </tr>
     <tr class="Table21">
       <td class="Table2_A6">
-        <p class="P2"><span class="T8">9 pm</span></p>
+        <p class="P2"><span class="T8 hora">9 pm +</span></p>
       </td>
       <td class="Table2_B6">
-        <p class="P2"><span class="T7">Cóctel y jazz</span></p>
+        <p class="P2"><span class="T7 leadagenda">Cóctel y jazz</span></p>
       </td>
     </tr>
   </table>
   </div>
+  </div>
+
+  <div class="wrapper">
 
 
     <h1>Preguntas Frecuentes</h1>
@@ -255,7 +308,7 @@ object-fit: contain;
       <dt>¿Dónde puedo obtener más información?</dt>
       <dd>Para más información, puedes consultar nuestras redes @socialabgt en Facebook o Twitter, escribirnos a guate@socialab.com o llamarnos al 3020-3564.</dd>
     </dl>
-  </div>
+    </div>
 <footer class="foot wrapper">
     <h1>Con el apoyo de:</h1>
   <table class="creditos">
