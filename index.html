@@ -44,6 +44,7 @@
    }
    h1 {
     padding-top: 1em;
+    font-family: 'Oswald', sans-serif;
    }
    .logos {
       max-width:100%;
@@ -53,31 +54,76 @@ object-fit: contain;
    .creditos {
    background-color: #FFF;
    }
+   .leadwrap{
+        width: 960px;
+     margin: 0 auto;
+   }
+
+
+   .leadphrase {
+    padding-top: 5em;
+    padding-bottom: 3em;
+    text-align: center;
+    font-family: 'Arbutus Slab', serif;
+    font-size: 28pt;
+    line-height: 60pt;
+   }
+   .define{
+    color: #00FF00;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    line-height: 60pt;
+    font-size: 48pt;
+    text-align: left;
+   }
+   .registrolink{
+     color: #00FF00;
+     font-family: 'Oswald', sans-serif;
+     border: #0F0 solid 4px;
+   }
   </style>
+
+  <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Oswald" rel="stylesheet">
 </head>
 <body>
+  <div class="leadwrap">
+    <div class="leadphrase">
+        Llegó el momento de romper los muros<br />
+    comer, hablar, reír con quien nunca lo hemos hecho<br />
+    compartir el fuego y pensar caminos
+    </div>
+
+    <div class="define">
+    CUMBRE <br />
+    de innovacIón <br />
+    social y <br />
+    empresarial <br />
+    </div>
+
+    <h1><img onerror="this.onerror=null; this.src='logo_disruptivos.png'" src="Logo_EnDisruptivos.svg" width="100%"></h1>
+
+  </div>
+
+
   <div class="wrapper">
-    <h1><img onerror="this.onerror=null; this.src='logo_disruptivos.png'" src="logo_disruptivos.svg"></h1>Encuentranos:<br>
+    Encuentranos:<br>
     <a href="https://twitter.com/socialabgt">@socialabgt en Twitter</a> | <a href="https://facebook.com/socialabgt">fb/socialabgt en Facebook</a> | <a href="https://instagram.com/socialabgt">@socialabgt en Instagram</a>
     <br>
     <h1>Registro</h1>
     <p>
-      Llena este formulario para <a href="https://goo.gl/forms/0WS4sSVDEacM1BYx1">Registrate aqui</a>.
+      Llena este formulario para <a href="https://goo.gl/forms/0WS4sSVDEacM1BYx1">Registrate Aqui</a>.
     </p>
 
     <div class="agenda">
     <h1>Agenda</h1>
 
+    <h2>Miércoles 1 de marzo</h2>
     <table border="0" cellpadding="0" cellspacing="0" class="Table1">
     <colgroup>
       <col width="20%">
       <col width="80%">
     </colgroup>
-    <tr class="Table11">
-      <td class="Table1_A1" colspan="2">
-        <p class="P2"><span class="T1">Miércoles 1 de marzo</span></p>
-      </td>
-    </tr>
     <tr class="Table11">
       <td class="Table1_A2">
         <p class="P2"><span class="T1">4 - 7.30 pm</span></p>
@@ -96,11 +142,13 @@ object-fit: contain;
         <p class="P2"><span class="T6">Un conversatorio con artistas y gestores culturales para discutir los modelos de desarrollo cultural y las posibles rutas de transformación social a través del arte.</span></p>
       </td>
     </tr>
-    <tr class="Table11">
-      <td class="Table1_A4" colspan="2">
-        <p class="P2"><span class="T6">Jueves 2 de marzo</span></p>
-      </td>
-    </tr>
+    </table>
+    <h2>Jueves 2 de marzo</h2>
+    <table>
+      <colgroup>
+      <col width="20%">
+      <col width="80%">
+    </colgroup>
     <tr class="Table11">
       <td class="Table1_A2">
         <p class="P2"><span class="T6">9:20 am</span></p>
@@ -207,10 +255,9 @@ object-fit: contain;
       <dt>¿Dónde puedo obtener más información?</dt>
       <dd>Para más información, puedes consultar nuestras redes @socialabgt en Facebook o Twitter, escribirnos a guate@socialab.com o llamarnos al 3020-3564.</dd>
     </dl>
-
-
-
-  <h1>Agradecemos a</h1>
+  </div>
+<footer class="foot wrapper">
+    <h1>Con el apoyo de:</h1>
   <table class="creditos">
     <tr>
       <td rowspan='2'>
@@ -225,8 +272,7 @@ object-fit: contain;
     </tr>
 
   </table>
-
-  </div>
+  </footer>
 
   <script>
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
