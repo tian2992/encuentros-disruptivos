@@ -35,6 +35,10 @@
    a:link, a:visited, a:hover, a:active {
      color:#FFF;
    }
+
+   a.blacklink:link, a.blacklink:visited, a.blacklink:hover, a.blacklink:active {
+     color:#000;
+   }
    .wrapper{
    color: #000;
    background-color: #FFF;
@@ -109,9 +113,38 @@ object-fit: contain;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     line-height: 60pt;
-    font-size: 48pt;
+    font-size: 52pt;
     text-align: left;
+    float: left;
+    padding-bottom: 0.5em;
    }
+   .fecha{
+    color: #00FF00;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    line-height: 60pt;
+    font-size: 38pt;
+    text-align: left;
+    width: 39%;
+    float: left;
+   }
+   .lugar{
+      color: #FFF;
+    font-family: 'Arbutus Slab', serif;
+    font-size: 22pt;
+    line-height: 30pt;
+    text-align: right;
+    width: 60%;
+    float: right;
+   }
+   .bothclear:after {
+      content: "";
+      clear: both;
+      display: table;
+      padding-bottom: 0.5em;
+    }
+
    .registrolink{
      color: #00FF00;
      font-family: 'Oswald', sans-serif;
@@ -180,9 +213,19 @@ object-fit: contain;
 
   </div>
 
+  <div class="wrappee bothclear">
+    <div class="fecha">
+      1 - 2 Marzo
+    </div>
+    <div class="lugar">
+      Centro Cultural <br /> Miguel Angel Asturias
+    </div>
+  </div>
+
 
   <div class="wrappee">
   <p>
+  <center><h1>ENTRADA LIBRE Y GRATUITA</h1></center>
     Encuentranos:<br>
     <a href="https://twitter.com/socialabgt">@socialabgt en Twitter</a> | <a href="https://facebook.com/socialabgt">fb/socialabgt en Facebook</a> | <a href="https://instagram.com/socialabgt">@socialabgt en Instagram</a>
     <br>
@@ -292,10 +335,11 @@ quienes las están buscando.
       </td>
       <td class="Table2_B2">
         <p class="P2"><span class="T7 leadagenda">Más allá del muro: conferencias disruptivas</span></p>
-        <p class="P4"><span class="T6">1. “</span><span class="T4">Dinero y consciencia”,</span> <span class="T6">Joan Melé 45 minutos</span></p>
-        <p class="P4"><span class="T6">2. “</span><span class="T4">La revolución de las gallinas: el modelo de agricultura regenerativa</span><span class="T6">"</span></p>
-        <p class="P4"><span class="T6">Reginaldo Haslett-Marroquín, 30 minutos</span></p>
-        <p class="P4"><span class="T6">3. "</span><span class="T4">La economía del amor</span><span class="T6">” Julián Ugarte, 30 minutos</span></p>
+        <ol>
+          <li><em>“Dinero y consciencia”</em>, Joan Melé, 45 minutos</span></li>
+          <li><em>“La revolución de las gallinas: el modelo de agricultura regenerativa”</em> Reginaldo Haslett-Marroquín, 30 minutos</span></li>
+          <li><em>“La economía del amor”</em> Julián Ugarte, 30 minutos</span></li>
+        </ol>
       </td>
     </tr>
     <tr class="Table21">
@@ -322,7 +366,8 @@ quienes las están buscando.
 
       <h1>Registro</h1>
     <p>
-      Llena este formulario para <a href="https://goo.gl/forms/0WS4sSVDEacM1BYx1">Registrate Aqui</a>.
+      Llena este formulario para <a class="blacklink" href="https://goo.gl/forms/0WS4sSVDEacM1BYx1">Registrate Aqui</a>.
+      Entrada libre y gratuita.
     </p>
 
 
