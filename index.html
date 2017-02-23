@@ -130,8 +130,12 @@ object-fit: contain;
     float: left;
    }
    .manifesto{
+    background-color: rgba(0,0,0,0.8);
+    margin-top: 3em;
     width: 80%;
     font-family: 'Arbutus Slab', serif;
+    padding: 2em;
+    padding-top: 1em;
    }
    .lugar{
       color: #FFF;
@@ -199,7 +203,7 @@ La promesa es por una sociedad nueva, una economía nueva, un mundo nuevo. Pero 
     </div>
 
     <div class="registro">
-      <a href="https://goo.gl/forms/0WS4sSVDEacM1BYx1">Inscríbete<br />Aquí</a>
+      <a href="https://goo.gl/forms/0WS4sSVDEacM1BYx1" onclick="trackOutboundLink('https://goo.gl/forms/0WS4sSVDEacM1BYx1'); return false;">Inscríbete<br />Aquí</a>
     </div>
 
     <div class="define">
@@ -228,7 +232,7 @@ La promesa es por una sociedad nueva, una economía nueva, un mundo nuevo. Pero 
   <p>
   <center><h1>ENTRADA LIBRE Y GRATUITA</h1></center>
     Encuentranos:<br>
-    <a href="https://twitter.com/socialabgt">@socialabgt en Twitter</a> | <a href="https://facebook.com/socialabgt">fb/socialabgt en Facebook</a> | <a href="https://instagram.com/socialabgt">@socialabgt en Instagram</a>
+    <a href="https://twitter.com/socialabgt" onclick="trackOutboundLink('https://twitter.com/socialabgt'); return false;">@socialabgt en Twitter</a> | <a href="https://facebook.com/socialabgt" onclick="trackOutboundLink('https://facebook.com/socialabgt'); return false;">fb/socialabgt en Facebook</a> | <a href="https://instagram.com/socialabgt" onclick="trackOutboundLink('https://instagram.com/socialabgt'); return false;">@socialabgt en Instagram</a>
     <br>
     </p>
   </div>
@@ -359,7 +363,7 @@ quienes las están buscando.
 
       <h1>Registro</h1>
     <p>
-      Llena este formulario para <a class="blacklink" href="https://goo.gl/forms/0WS4sSVDEacM1BYx1">Registrate Aqui</a>.
+      Llena este formulario para <a class="blacklink" onclick="trackOutboundLink('https://goo.gl/forms/0WS4sSVDEacM1BYx1'); return false;" href="https://goo.gl/forms/0WS4sSVDEacM1BYx1">Registrate Aqui</a>.
       Entrada libre y gratuita.
     </p>
 
@@ -433,7 +437,7 @@ mejor pues confiamos en las manos de la gente que va a
 construirlo.
 
     </div>
-
+</div>
 <footer class="foot wrappee">
     <h1>Con el apoyo de:</h1>
   <table class="creditos">
@@ -453,12 +457,19 @@ construirlo.
   </footer>
 </div>
   <script>
+    /** **/
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
    ga('create', 'UA-91739883-1', 'auto');
    ga('send', 'pageview');
+   var trackOutboundLink = function(url) {
+    ga('send', 'event', 'outbound', 'click', url, {
+      'transport': 'beacon',
+      'hitCallback': function(){document.location = url;}
+    });
+  }
   </script>
 </body>
 </html>
