@@ -68,7 +68,7 @@ object-fit: contain;
    .creditos {
    background-color: #FFF;
    }
-   .leadwrap, .agenda{
+   .leadwrap, .agenda, .gente{
         width: 960px;
      margin: 0 auto;
    }
@@ -79,6 +79,17 @@ object-fit: contain;
    width: 100%;
    padding-bottom: 4em;
    background-color: #0F0;
+   }
+   .wrapnegro{
+    width: 100%;
+    padding-bottom: 4em;
+    background-color: #000;
+   }
+   .wrapblanco{
+    width: 100%;
+    padding-bottom: 4em;
+    background-color: #FFF;
+    color: #111;
    }
   .followphrase{
       padding-top: 1em;
@@ -184,8 +195,32 @@ object-fit: contain;
    }
    .twocol{
    column-count: 2;
-
    }
+   .conferencista{
+   padding: 1.5em 0;
+   }
+   .conferencista:after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+   .circledpic {
+    width: 128px;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    }
+    .conferencista > p{
+      margin-left: 150px;
+      font-family: 'Arbutus Slab', serif;
+    }
+    .conferencista > h3{
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.5em;
+      margin-top:0;
+      line-height: 128px;
+      margin-left: 150px;
+    }
   </style>
 
   <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Oswald" rel="stylesheet">
@@ -238,12 +273,45 @@ VIVE EL LANZAMIENTO DE SOCIALAB GUATEMALA
     </p>
   </div>
 
+  <div class="wrapblanco">
+    <div class="gente">
+      <h1>Conferencistas</h1>
+      <div class="conferencistas">
+        <div class="conferencista">
+          <img src="fotos/jmele.jpg" class="circledpic">
+          <h3>Joan Melé</h3>
+          <p>
+            <strong>Fundador de Triodos Bank</strong>
+            Ex-director de Triodos Bank, fundador de la empresa Taller de Conciencia, miembro del Consejo Asesor de Triodos Bank, Asesor de la Cámara de Emprendedores y Empresarios de Cataluña, promotor de la banca ética en España y Latinoamérica y autor de los libros Dinero y conciencia y La Economía explicada a los jóvenes.
+          </p>
+        </div>
+        <div class="conferencista">
+          <img src="fotos/rhas.jpg" class="circledpic">
+          <h3>Reginaldo Haslett-Marroquín</h3>
+
+          <p><strong>Empresario agrícola</strong>
+            Director de estrategia del Main Street Project. Creó un sistema de agricultura regenerativa que ha innovado la forma en que se producen y consumen alimentos con miras a la soberanía alimentaria. Guatemalteco residente en Estados Unidos.
+          </p>
+        </div>
+        <div class="conferencista">
+          <img src="fotos/jugarte.jpg" class="circledpic">
+          <h3>Julián Ugarte</h3>
+          <p>
+            <strong>Fundador de Socialab</strong>
+            Fundador y director de Socialab, ganador del premio a la innovación social Chile. Diseñador industrial que ha recorrido el mundo compartiendo su visión sobre la “economía del amor”.
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
   <div class="wrapverde">
     <div class="agenda">
-    <div class="followphrase">
-    Bienvenidos los que colaboran y quieren compartir desde las diferencias el proposito que los une para encontrar rutas excepcionales de transformación social y económica.
-
-</div>
+      <div class="followphrase">
+        Bienvenidos los que colaboran y quieren compartir desde las diferencias el proposito que los une para encontrar rutas excepcionales de transformación social y económica.
+      </div>
 
     <h2>Miércoles 1 de marzo</h2>
     <table border="0" cellpadding="0" cellspacing="0" class="tablaAgenda">
